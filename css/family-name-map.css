@@ -1,0 +1,110 @@
+body {
+    background-color: white;
+    margin: 0;
+    font-family: PingFangTC-Regular, sans-serif, "Microsoft JhengHei";
+}
+
+h1 {
+    font-size: 36px;
+}
+
+#header,
+#footer {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#legend {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header a,
+#footer a {
+    color: black;
+}
+
+#header a:hover,
+#footer a:hover {
+    text-decoration: none;
+    color: #ff5733;
+}
+
+#header p,
+li {
+    font-size: 18px;
+}
+
+#container {
+    position: relative;
+    height: 1000px;
+    background-color: white;
+}
+
+#map {
+    width: 960px;
+    height: 960px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.county-borders {
+    fill: none;
+    stroke: black;
+    stroke-width: 1.5px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    pointer-events: none;
+}
+
+.pretty-select {
+    /*移除箭頭樣式*/
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    /*改變右邊箭頭樣式*/
+    background: url("../images/arrow.png") no-repeat right center transparent;
+    font-size: 18px;
+    border: 0px;
+    text-align-last: center;
+    position: absolute;
+    top: 20px;
+    left: 25%;
+    padding-left: 2px;
+    padding-right: 40px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+/*IE隱藏箭頭樣式*/
+.pretty-select::-ms-expand {
+    display: none;
+}
+
+.pretty-select:focus {
+    box-shadow: 0 0 5px 2px #467BF4;
+}
+
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    padding: 2px;
+    font-size: 18px;
+    background: white;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+#footer {
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
